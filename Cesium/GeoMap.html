@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="SHIFT_JIS">
+  <title>Kyusyu GeoMap</title>
+  <link  rel="stylesheet" href="./progate.css">
+  <link  href="./Cesium/Widgets/widgets.css" rel="stylesheet" />
+  <link  href="./Cesium/Widgets/lighter.css" rel="stylesheet" />
+  <script src="./stats.min.js"></script>
+  <script src="./Cesium/Cesium.js"></script>
+  <script src="./JapanGSIImageryProvider.js"></script>
+  <script src="./JapanGSITerrainProvider.js"></script>
+  <script src="./toolbar.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">New3D GeoMap</div>
+  </div>
+
+  <div class="main">
+    <div class="contents">
+      <div class="contents-top">
+       <div id="cesiumContainer" class="editSize"></div>
+       <script src="./Source/AppFPSTest.js"></script>
+     </div>
+     <div class="footer">
+       <div id="toolbar"></div>
+       <div id="button"></div>
+         <table>
+          <tr>
+            <th scope="col">Map</th><th scope="col">Data</th><th scope="col">Dimension</th><th scope="col">Location</th><th scope="col">Permeation</th>
+          </tr>
+          <tr>
+            <th scope="row"><div id="mapMenu"></div></th><th scope="row"><div id="dataMenu"></div></th>
+            <th scope="row"><div id="terrainMenu"></div></th><th scope="row"><div id="locate"></div></th>
+            <th scope="row"><div id="depth"></div></th>
+          </tr>
+        </table>
+       <script src="./toolbarObj.js"></script>
+     </div>
+    </div>
+  </div>
+
+</body>
+</html>

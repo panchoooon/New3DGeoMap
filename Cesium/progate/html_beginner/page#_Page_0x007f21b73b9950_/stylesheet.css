@@ -1,0 +1,114 @@
+li
+{
+  list-style: none;
+}
+
+.header
+{
+  height: 65px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.header-left
+{
+  float: left;
+  padding: 10px 60px;
+  color: #ED7000;
+  font-size: 30px;
+}
+
+.header-right
+{
+  float: right;
+  color: #808080;
+}
+
+.header-right li
+{
+  float: left;
+  padding: 20px 30px;
+  border-left: 1px solid #dddddd;
+}
+
+.selected
+{
+  color: #ED7000;
+}
+
+.main
+{
+  width: 1300px;
+}
+
+.footer
+{
+  height: 200px;
+  background-color: #FCFFC0;
+  clear: left;
+}
+
+.sidebar
+{
+  height: 600px;
+  width: 200px;
+  float: left;
+  padding: 30px;
+}
+
+.sidebar li
+{
+  color: white;
+  background-color: #40bfb0;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.contents
+{
+  height: 600px;
+  /*background-colorの指定を消してください*/
+  background-color: none;
+  width: 900px;
+  float: left;
+  padding: 30px;
+}
+
+.contents-top
+{
+  height: 300px;
+}
+
+.contents-top h1
+{
+  margin-bottom: 30px;
+}
+
+.contents-top-item
+{
+  width: 270px;
+  float: left;
+  padding-right: 30px;
+}
+
+.contents-top-item h2
+{
+  margin-bottom: 10px;
+}
+
+/*contents-bottomの<h1>のmargin-bottomプロパティを30pxにしてください。*/
+.contents-bottom h1{
+  margin-bottom: 30px;
+}
+
+th,
+td
+{
+  border: 1px solid #808080;
+  /*上下のpaddingを10px 左右のpaddingを60px にしてください*/
+  padding: 10px 60px;
+}
+
+table
+{
+  border-collapse: collapse;
+}

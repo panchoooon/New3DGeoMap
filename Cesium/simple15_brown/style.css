@@ -1,0 +1,229 @@
+@charset "shift_jis";
+
+
+
+body {
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 75%;		/*全般の文字サイズ*/
+	line-height: 2;		/*全般の行間*/
+	color: #666666;		/*全般の文字色*/
+	background: #FFFFFF url(images/bg.gif) repeat-x top;	/*背景色と壁紙（上部の薄いグラデーション）設定*/
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+h1,h2,h3,p,ul,li,dl,dt,dd{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+img {
+	border: none;
+}
+
+.look {
+	background: #f5f5f5;
+}
+
+.color1 {
+	color: #3d2d21;
+}
+
+
+
+
+/*全体的なリンク設定
+---------------------------------------------------------------------------*/
+a {
+	color: #333333;		/*リンク部分の文字色*/
+}
+
+a:hover {
+	color: #3d2d21;		/*リンク部分のカーソルオーバー時の文字色*/
+}
+
+
+
+
+/*コンテナー（特に変更の必要なし）
+---------------------------------------------------------------------------*/
+#container {
+	width: 804px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+
+
+/*ヘッダー
+---------------------------------------------------------------------------*/
+#header {
+	background: url(images/header_bg.gif) no-repeat right top;	/*右上の住所とTELの画像設定。不要なら丸ごと削除する。*/
+}
+
+#header h1 {
+	font-size: 10px;		/*h1タグの文字サイズ*/
+	font-weight: normal;	/*太さを通常に戻す。太字がいいならこの１行を外す。*/
+	width: 500px;			/*右上の住所とTEL画像にかぶらないように幅を設定*/
+	line-height: 1.4;		/*複数行になった場合用の行間設定*/
+	padding-bottom: 10px;	/*下のロゴ画像との余白*/
+}
+
+
+
+/*トップメニュー
+---------------------------------------------------------------------------*/
+ul#topmenu {
+	height: 54px;
+	line-height: 54px;
+	background: url(images/topmenu_bg.gif) no-repeat top;
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 0.2em;	/*メニューのテキストの文字間隔を少し広めにとる設定*/
+	overflow: hidden;
+}
+
+ul#topmenu li {
+	float: left;
+}
+
+ul#topmenu li a {
+	color: #FFFFFF;	/*メニューの文字色*/
+	text-decoration: none;
+	display: block;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: url(images/topmenu_line.gif) no-repeat right;
+}
+
+ul#topmenu li a:hover {
+	background: url(images/topmenu_bg.gif) no-repeat bottom;
+}
+
+
+
+/*コンテンツ
+---------------------------------------------------------------------------*/
+#contents {
+	clear: left;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+}
+
+
+
+/*サイドコンテンツ
+---------------------------------------------------------------------------*/
+#side {
+	float: left;	/*サイドコンテンツを左側に配置する設定*/
+	width: 210px;
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+
+#side h3 {
+	font-size: 100%;
+	line-height: 56px;
+	background: url(images/midashi_bg1.gif) repeat-x;
+	height: 56px;
+	text-align: center;	/*h3見出しのテキストを中央よせにする設定。左よせがいいなら１行削除する。*/
+	overflow: hidden;
+}
+
+#side p {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+
+
+/*サイドメニュー
+---------------------------------------------------------------------------*/
+ul.sidemenu a {
+	color: #666666;	/*文字色*/
+	text-decoration: none;
+	text-align: center;	/*テキストを中央よせにする設定。左よせがいいなら１行削除する。*/
+	border-bottom: 1px solid #aeaeae;	/*各メニュー下に1pxの直線を引く設定*/
+	display: block;
+	width: 210px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+ul.sidemenu a:hover {
+	background: #f7f7f7;	/*カーソルオーバー時の背景色*/
+	color: #000000;			/*カーソルオーバー時の文字色*/
+}
+
+
+
+
+/*メインコンテンツ
+---------------------------------------------------------------------------*/
+#main {
+	float: right;
+	width: 570px;
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+
+#main h2 {
+	font-size: 100%;
+	background: url(images/h2_bg.gif) no-repeat;
+	line-height: 30px;
+	height: 30px;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 50px;
+}
+
+#main p {
+	padding: 0.5em 10px 1em;
+}
+
+
+
+
+
+/*フッター
+---------------------------------------------------------------------------*/
+#footer {
+	clear: both;
+	width: 100%;
+	line-height: 1.4;
+	text-align: center;
+}
+
+
+
+
+
+/*メインコンテンツ内の「What's New」部分
+---------------------------------------------------------------------------*/
+#main dl.new {
+	width: 94%;			/*What's Newボックスの幅*/
+	height: 100px;		/*What's Newボックスの高さ*/
+	overflow: auto;		/*この設定でiframe風に見える*/
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	background: #FAFAFA;	/*背景の色*/
+	border: 1px dotted #cfcfcf;	/*フチのライン*/
+	margin-top: 0.5em;
+}
+
+#main dt {
+	font-weight: bold;	/*日付の色を太字にする*/
+}
+
+#main dd {
+	border-bottom: 1px dotted #cfcfcf;	/*説明文の下に1pxの点線(dotted)を#cfcfcfの色で入れる。*/
+}

@@ -1,0 +1,51 @@
+.header
+{
+  height: 65px;
+  background-color: #DAFFE7;
+}
+
+.main
+{
+  width: 1300px;
+}
+
+.footer
+{
+  height: 200px;
+  background-color: #FCFFC0;
+  clear: left;
+}
+
+.sidebar
+{
+  height: 600px;
+  background-color: #FFD8CF;
+  width: 200px;
+  float: left;
+}
+
+.contents
+{
+  height: 600px;
+  background-color: #E8E5FF;
+  width: 900px;
+  float: left;
+}
+
+/*header-leftのfloatプロパティをleftにしてください*/
+.header-left
+{
+  float: left;
+}
+
+/*header-rightのfloatプロパティをrightにしてください*/
+.header-right
+{
+  float: right;
+}
+
+/*header-rightの中の<li>のfloatプロパティをleftにしてください*/
+.header-right li
+{
+  float: left;
+}

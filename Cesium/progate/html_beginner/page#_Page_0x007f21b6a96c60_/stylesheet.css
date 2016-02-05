@@ -1,0 +1,1 @@
+.header\n{\n  height: 65px;\n  background-color: #DAFFE7;\n}\n\n.main\n{\n  width: 1300px;\n}\n\n.footer\n{\n  height: 200px;\n  background-color: #FCFFC0;\n  clear: left;\n}\n\n.sidebar\n{\n  height: 600px;\n  background-color: #FFD8CF;\n  width: 200px;\n  float: left;\n}\n\n.contents\n{\n  height: 600px;\n  background-color: #E8E5FF;\n  width: 900px;\n  float: left;\n}
