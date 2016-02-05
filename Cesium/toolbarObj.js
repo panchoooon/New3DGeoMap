@@ -95,26 +95,11 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/hakone_shelter.geojson'
+          './Data/hakone_shelter.geojson'
         )
       );
       viewer.camera.lookAt(
         Cesium.Cartesian3.fromDegrees(139.115824, 35.235114),
-        new Cesium.Cartesian3(0.0, 0.0, 5000.0)
-      );
-      viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
-    }
-},{
-    text : '東京タワーから東京駅まで',
-    onselect : function() {
-      Remove();
-      viewer.dataSources.add(
-        Cesium.KmlDataSource.load(
-          'http://potuji881.github.io/cesium-tokyo/cesium-starter-app-master/Source/TokyoTest.kml'
-        )
-      );
-      viewer.camera.lookAt(
-        Cesium.Cartesian3.fromDegrees(139.76, 35.67),
         new Cesium.Cartesian3(0.0, 0.0, 5000.0)
       );
       viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
@@ -125,7 +110,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/Turugi.geojson',{
+          './Data/Turugi.geojson',{
             stroke: Cesium.Color.DEEPSKYBLUE,
             strokeWidth: 8
           }
@@ -143,7 +128,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.KmlDataSource.load(
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/Route322.kml'
+          './Data/Route322.kml'
         )
       );
       viewer.camera.lookAt(
@@ -158,8 +143,8 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-//          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/pointTest2.geojson'
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/2Final_Route385.geojson'
+//          './Data/pointTest2.geojson'
+          './Data/2Final_Route385.geojson'
         )
       );
       viewer.camera.lookAt(
@@ -174,7 +159,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/route41.geojson',{
+          './Data/route41.geojson',{
             stroke: Cesium.Color.CRIMSON,
             strokeWidth: 6
           }
@@ -192,7 +177,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/Dazaifu_Sanpo.geojson',{
+          './Data/Dazaifu_Sanpo.geojson',{
             stroke: Cesium.Color.LIGHTPINK,
             strokeWidth: 8,
             markerColor: Cesium.Color.DODGERBLUE
@@ -201,7 +186,7 @@ Sandcastle.addDefaultToolbarMenu([{
       );
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          'http://potuji881.github.io/FukuokaTourism/Cesium-JapanGSI-master/Source/Mapping_geo_final.geojson',{
+          './Data/Mapping_geo_final.geojson',{
             markerColor: Cesium.Color.FIREBRICK
           }
         )
@@ -218,7 +203,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.KmlDataSource.load(
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/Rekishi2.kml'
+          './Data/Rekishi2.kml'
         )
       );
       viewer.camera.lookAt(
@@ -741,7 +726,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          'http://potuji881.github.io/FukuokaTourism/Cesium-JapanGSI-master/Source/Final_Furubouchu_ful1.geojson',{
+          './Data/Final_Furubouchu_ful1.geojson',{
             stroke: Cesium.Color.GOLD,
             strokeWidth: 8
           }
@@ -759,7 +744,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/Unzen_Tozan.geojson',{
+          './Data/Unzen_Tozan.geojson',{
             stroke: Cesium.Color.GOLD,
             strokeWidth: 8
           }
@@ -777,7 +762,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          'http://potuji881.github.io/CesiumHakoneTest/Cesium-JapanGSI-master/Source/Omuta.geojson',{
+          './Data/Omuta.geojson',{
             stroke: Cesium.Color.DEEPSKYBLUE,
             strokeWidth: 8
           }
