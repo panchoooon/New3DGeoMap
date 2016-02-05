@@ -2,9 +2,10 @@
 //var camera_start = Cesium.Cartesian3.fromDegrees(139.76, 35.67, 15000.0);
 //var camera_start = Cesium.Cartesian3.fromDegrees(139.115824, 35.235114, 1000.0);
 function fly(position) {
-   var camera_start = Cesium.Cartesian3.fromDegrees(position.coords.longitude, position.coords.latitude, 500.0)
+   var camera_start_fly = Cesium.Cartesian3.fromDegrees(position.coords.longitude, position.coords.latitude, 500.0)
 }
 navigator.geolocation.getCurrentPosition(fly);
+var camera_start = camera_start_fly;
 //var camera_direction = Cesium.Cartesian3.fromDegrees(-75.0, 70.0, 0);
 
 var viewer = new Cesium.Viewer('cesiumContainer', {
