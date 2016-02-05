@@ -216,23 +216,7 @@ Sandcastle.addDefaultToolbarMenu([{
     text : '水城跡（テスト）',
     onselect : function() {
       Remove();
-      viewer.entities.add({
-        name : '水城跡',
-        polylineVolume : {
-            positions : Cesium.Cartesian3.fromDegreesArrayHeights([
-                130.4984375263679, 33.52209410359912, 35.900002,
-                130.4881571438487, 33.51570562979240, 41.400002
-            ]),
-            shape :[new Cesium.Cartesian2(-0, -0),
-                    new Cesium.Cartesian2(20, -0),
-                    new Cesium.Cartesian2(20, 10),
-                    new Cesium.Cartesian2(-0, 10)],
-            cornerType : Cesium.CornerType.BEVELED,
-            material : Cesium.Color.GREEN.withAlpha(1.0),
-            outline : true,
-            outlineColor : Cesium.Color.BLACK
-        }
-      });
+      Mizuki();
       viewer.camera.lookAt(
         Cesium.Cartesian3.fromDegrees(130.49839, 33.52212),
         new Cesium.Cartesian3(0.0, 0.0, 5000.0)
