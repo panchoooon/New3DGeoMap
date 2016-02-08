@@ -102,27 +102,11 @@ Sandcastle.addDefaultToolbarMenu([{
       viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
     }
 },{
-    text : '国道322号線',
-    onselect : function() {
-      Remove();
-      viewer.dataSources.add(
-        Cesium.KmlDataSource.load(
-          './Data/Route322.kml'
-        )
-      );
-      viewer.camera.lookAt(
-        Cesium.Cartesian3.fromDegrees(130.52239, 33.31342),
-        new Cesium.Cartesian3(0.0, 0.0, 5000.0)
-      );
-      viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
-    }
-},{
     text : '坂本峠（国道385号線）',
     onselect : function() {
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-//          './Data/pointTest2.geojson'
           './Data/2Final_Route385.geojson'
         )
       );
@@ -154,6 +138,7 @@ Sandcastle.addDefaultToolbarMenu([{
     text : '歴史の散歩道',
     onselect : function() {
       Remove();
+      PolygonMizuki();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
           './Data/Dazaifu_Sanpo.geojson',{
@@ -170,32 +155,6 @@ Sandcastle.addDefaultToolbarMenu([{
           }
         )
       );
-      viewer.camera.lookAt(
-        Cesium.Cartesian3.fromDegrees(130.49839, 33.52212),
-        new Cesium.Cartesian3(0.0, 0.0, 5000.0)
-      );
-      viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
-    }
-},{
-    text : '歴史の散歩道（KML）',
-    onselect : function() {
-      Remove();
-      viewer.dataSources.add(
-        Cesium.KmlDataSource.load(
-          './Data/Rekishi2.kml'
-        )
-      );
-      viewer.camera.lookAt(
-        Cesium.Cartesian3.fromDegrees(130.49839, 33.52212),
-        new Cesium.Cartesian3(0.0, 0.0, 5000.0)
-      );
-      viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
-    }
-},{
-    text : '水城跡（テスト）',
-    onselect : function() {
-      Remove();
-      PolygonMizuki();
       viewer.camera.lookAt(
         Cesium.Cartesian3.fromDegrees(130.49839, 33.52212),
         new Cesium.Cartesian3(0.0, 0.0, 5000.0)
@@ -245,24 +204,6 @@ Sandcastle.addDefaultToolbarMenu([{
       );
       viewer.camera.lookAt(
         Cesium.Cartesian3.fromDegrees(130.276, 32.749138),
-        new Cesium.Cartesian3(0.0, 0.0, 5000.0)
-      );
-      viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
-    }
-},{
-    text : '大牟田GPXテスト',
-    onselect : function() {
-      Remove();
-      viewer.dataSources.add(
-        Cesium.GeoJsonDataSource.load(
-          './Data/Omuta.geojson',{
-            stroke: Cesium.Color.DEEPSKYBLUE,
-            strokeWidth: 8
-          }
-        )
-      );
-      viewer.camera.lookAt(
-        Cesium.Cartesian3.fromDegrees(130.515396,33.36623),
         new Cesium.Cartesian3(0.0, 0.0, 5000.0)
       );
       viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
