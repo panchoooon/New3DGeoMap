@@ -1,4 +1,4 @@
-function Mizuki(){
+function PolygonMizuki(){
     viewer.entities.add({
         name : '水城跡',
         polylineVolume : {
@@ -18,7 +18,7 @@ function Mizuki(){
     });
 }
 
-function Ohnojo(){
+function PolygonOhnojo(){
        viewer.entities.add({
         name : '大野城跡',
         polylineVolume : {

@@ -1,5 +1,4 @@
 //mapMenu
-
 var layers = viewer.scene.imageryLayers;
 
 function Remove(){
@@ -38,17 +37,7 @@ Sandcastle.addToolbarMenu([{
         })
       );
     }
-}/*,{
-    text : 'ArcGisMap',
-    onselect : function() {
-      layers.removeAll();
-      layers.addImageryProvider(
-        new Cesium.ArcGisMapServerImageryProvider({
-          url: '//services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
-        })
-      );
-    }
-}*/,{
+},{
     text : 'Relief',
     onselect : function() {
       layers.removeAll();
@@ -70,17 +59,7 @@ Sandcastle.addToolbarMenu([{
       );
       map.alpha = 0.6;
     }
-}/*,{
-    text : '写真',
-    onselect : function() {
-      layers.removeAll();
-      layers.addImageryProvider(
-        new Cesium.JapanGSIImageryProvider({
-          layerLists: ["ort"]
-        })
-      );
-    }
-}*/], 'mapMenu');
+}], 'mapMenu');
 
 
 //dataMenu
@@ -216,7 +195,7 @@ Sandcastle.addDefaultToolbarMenu([{
     text : '水城跡（テスト）',
     onselect : function() {
       Remove();
-      Mizuki();
+      PolygonMizuki();
       viewer.camera.lookAt(
         Cesium.Cartesian3.fromDegrees(130.49839, 33.52212),
         new Cesium.Cartesian3(0.0, 0.0, 5000.0)
@@ -227,7 +206,7 @@ Sandcastle.addDefaultToolbarMenu([{
     text : '大野城跡',
     onselect : function() {
       Remove();
-      Ohnojo();
+      PolygonOhnojo();
       viewer.camera.lookAt(
         Cesium.Cartesian3.fromDegrees(130.51899433135986, 33.543308309351943),
         new Cesium.Cartesian3(0.0, 0.0, 5000.0)
@@ -290,12 +269,8 @@ Sandcastle.addDefaultToolbarMenu([{
     }
 }], 'dataMenu');
 
-/*
-Sandcastle.addToolbarButton('Reset', function() {
-  Remove();
-}, 'dataMenu');
-*/
 
+//terrainMenu
 Sandcastle.addDefaultToolbarMenu([{
     text : '2Dマップ',
     onselect : function() {
@@ -326,6 +301,8 @@ Sandcastle.addDefaultToolbarMenu([{
     }
 }], 'terrainMenu');
 
+
+//locate
 Sandcastle.addDefaultToolbarButton('現在地へジャンプ', function() {
     // Create callback for browser's geolocation
     function fly(position) {
@@ -337,6 +314,8 @@ Sandcastle.addDefaultToolbarButton('現在地へジャンプ', function() {
     navigator.geolocation.getCurrentPosition(fly);
 }, 'locate');
 
+
+//depth
 Sandcastle.addDefaultToolbarMenu([{
     text : '透過する',
     onselect : function() {
