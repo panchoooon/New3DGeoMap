@@ -178,7 +178,7 @@ Sandcastle.addDefaultToolbarMenu([{
       Remove();
       viewer.dataSources.add(
         Cesium.GeoJsonDataSource.load(
-          './Data/Final_Furubouchu_ful1.geojson',{
+          './Data/Furubouchu.geojson',{
             stroke: Cesium.Color.GOLD,
             strokeWidth: 8
           }
