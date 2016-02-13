@@ -1,4 +1,4 @@
-//mapMenu
+
 var layers = viewer.scene.imageryLayers;
 
 function Remove(){
@@ -14,6 +14,8 @@ function AddReliefLayers(){
     );
 }
 
+
+//mapMenu
 Sandcastle.addToolbarMenu([{
     text : 'Simple (Reset)',
     onselect : function() {
