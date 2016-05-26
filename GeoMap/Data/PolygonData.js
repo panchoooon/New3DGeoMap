@@ -20,7 +20,7 @@ function PolygonMizuki(){
 
 function PolygonOhnojo(){
        viewer.entities.add({
-        name : '大野城跡',
+        name : '大野城跡aaa',
         polylineVolume : {
             positions : Cesium.Cartesian3.fromDegreesArrayHeights([
               130.51899433135986, 33.543308309351943, 285.6000061 ,
